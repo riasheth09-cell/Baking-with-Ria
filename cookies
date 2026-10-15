@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Tooth Bakery - Cookies Recipe</title>
+    <!-- Link to shared external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar (Identical layout across all pages) -->
+    <header>
+        <div class="logo-container">
+            <h1>🧁 Sweet Tooth Bakery 🍪</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cupcakes.html">Cupcakes</a></li>
+                <li><a href="cookies.html" class="active">Cookies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Recipe Header -->
+        <section class="hero-section">
+            <h2>Ultimate Golden Chocolate Chip Cookies</h2>
+            <p>Crispy on the edges, soft and gooey in the center, and loaded with rich chocolate chips in every bite!</p>
+            
+            <div class="main-image-container">
+                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80" alt="Warm golden chocolate chip cookies">
+            </div>
+        </section>
+
+        <!-- Interactive Feature: Show/Hide Content -->
+        <section class="interactive-box">
+            <h3>💡 Baker's Secret Tip</h3>
+            <p>Want to unlock the secret to getting bakery-style chewy cookies every single time?</p>
+            <button id="secret-btn" onclick="toggleSecretTip()">Reveal Secret Tip</button>
+            <p id="secret-tip" style="display: none; margin-top: 15px;" class="highlight-text">
+                🌟 <strong>Pro Tip:</strong> Chill your cookie dough in the refrigerator for at least 30 minutes before baking! This stops the butter from melting too fast, keeping your cookies thick, soft, and chewy.
+            </p>
+        </section>
+
+        <!-- Recipe Content Section -->
+        <section class="recipe-grid">
+            <!-- Unordered List: Ingredients -->
+            <div class="recipe-card">
+                <h3>📋 Cookie Ingredients</h3>
+                <ul class="ingredients-list">
+                    <li>1 cup unsalted butter (melted and slightly cooled)</li>
+                    <li>1 cup light brown sugar (packed)</li>
+                    <li>0.5 cup granulated white sugar</li>
+                    <li>2 large eggs (at room temperature)</li>
+                    <li>2 teaspoons pure vanilla extract</li>
+                    <li>2.25 cups all-purpose flour</li>
+                    <li>1 teaspoon baking soda</li>
+                    <li>0.5 teaspoon salt</li>
+                    <li>1.5 cups semi-sweet chocolate chips</li>
+                </ul>
+            </div>
+
+            <!-- Ordered List: Baking Steps -->
+            <div class="recipe-card">
+                <h3>👩‍🍳 Step-by-Step Instructions</h3>
+                <ol class="instructions-list">
+                    <li>Whisk together melted butter, brown sugar, and white sugar in a large bowl until smooth.</li>
+                    <li>Add eggs and vanilla extract; whisk for 1 minute until creamed and bright.</li>
+                    <li>Fold in the flour, baking soda, and salt with a spatula until combined.</li>
+                    <li>Gently fold in chocolate chips until evenly mixed throughout dough.</li>
+                    <li>Cover dough and chill in the refrigerator for 30–60 minutes.</li>
+                    <li>Preheat oven to 375°F (190°C) and line baking sheets with parchment paper.</li>
+                    <li>Scoop 2-tablespoon dough balls onto sheets, leaving 2 inches between each.</li>
+                    <li>Bake for 9–11 minutes until edges are golden brown. Let cool on baking sheet for 5 minutes.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="navigation-links">
+            <a href="cupcakes.html" class="btn">&larr; Back to Cupcake Recipe</a>
+            <a href="index.html" class="btn">Return to Home Page &rarr;</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sweet Tooth Bakery. Built with HTML, CSS, & JavaScript.</p>
+        <button id="theme-btn" onclick="changeTheme()">🎨 Change Theme Color</button>
+    </footer>
+
+    <!-- Shared JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
