@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Tooth Bakery - Cupcakes Recipe</title>
+    <!-- Link to shared external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar (Identical to index.html with active state update) -->
+    <header>
+        <div class="logo-container">
+            <h1>🧁 Sweet Tooth Bakery 🍪</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cupcakes.html" class="active">Cupcakes</a></li>
+                <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Recipe Header -->
+        <section class="hero-section">
+            <h2>Funfetti Rainbow Cupcakes</h2>
+            <p>Fluffy vanilla cupcakes loaded with colorful sprinkles and topped with creamy buttercream frosting!</p>
+            
+            <div class="main-image-container">
+                <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=800&q=80" alt="Fresh Funfetti Cupcakes with frosting and sprinkles">
+            </div>
+        </section>
+
+        <!-- Interactive Serving Calculator -->
+        <section class="interactive-box">
+            <h3>🔢 Interactive Recipe Portion Calculator</h3>
+            <p>Need more or fewer cupcakes? Use these buttons to adjust quantities:</p>
+            <div class="calculator-controls">
+                <button class="calc-btn" onclick="adjustServings(-6)">- 6 Cupcakes</button>
+                <span id="serving-count">12 Cupcakes</span>
+                <button class="calc-btn" onclick="adjustServings(6)">+ 6 Cupcakes</button>
+            </div>
+        </section>
+
+        <!-- Recipe Content Section -->
+        <section class="recipe-grid">
+            <!-- Unordered List: Ingredients -->
+            <div class="recipe-card">
+                <h3>📋 Ingredients Checklist</h3>
+                <ul class="ingredients-list">
+                    <li><span class="qty" data-base="1.5">1.5</span> cups all-purpose flour</li>
+                    <li><span class="qty" data-base="1.5">1.5</span> tsp baking powder</li>
+                    <li><span class="qty" data-base="0.25">0.25</span> tsp salt</li>
+                    <li><span class="qty" data-base="0.5">0.5</span> cup unsalted butter (softened)</li>
+                    <li><span class="qty" data-base="0.75">0.75</span> cup granulated sugar</li>
+                    <li><span class="qty" data-base="2">2</span> large eggs</li>
+                    <li><span class="qty" data-base="2">2</span> tsp vanilla extract</li>
+                    <li><span class="qty" data-base="0.5">0.5</span> cup whole milk</li>
+                    <li><span class="qty" data-base="0.5">0.5</span> cup rainbow sprinkles</li>
+                </ul>
+            </div>
+
+            <!-- Ordered List: Baking Instructions -->
+            <div class="recipe-card">
+                <h3>👩‍🍳 Baking Instructions</h3>
+                <ol class="instructions-list">
+                    <li>Preheat your oven to 350°F (175°C) and line a 12-cup muffin tin with paper liners.</li>
+                    <li>Whisk together flour, baking powder, and salt in a medium mixing bowl.</li>
+                    <li>In a large bowl, beat the butter and sugar until light and fluffy.</li>
+                    <li>Beat in the eggs one at a time, then mix in the vanilla extract.</li>
+                    <li>Alternately add the dry mixture and milk into the batter, mixing until smooth.</li>
+                    <li>Gently fold in the rainbow sprinkles with a spatula.</li>
+                    <li>Divide batter evenly into muffin cups and bake for 18–20 minutes.</li>
+                    <li>Allow cupcakes to cool completely before topping with frosting and extra sprinkles!</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="navigation-links">
+            <a href="index.html" class="btn">&larr; Back to Home</a>
+            <a href="cookies.html" class="btn">Go to Cookie Recipe &rarr;</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sweet Tooth Bakery. Built with HTML, CSS, & JavaScript.</p>
+        <button id="theme-btn" onclick="changeTheme()">🎨 Change Theme Color</button>
+    </footer>
+
+    <!-- Shared JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
