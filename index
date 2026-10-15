@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Tooth Bakery - Home</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar (Included on every page) -->
+    <header>
+        <div class="logo-container">
+            <h1>🧁 Sweet Tooth Bakery 🍪</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cupcakes.html">Cupcakes</a></li>
+                <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h2>Welcome to my page, this site has cookies!</h2>
+            <p>Step into a world of fresh, colorful, and delicious home-baked treats. Click on any treat below to explore secret recipes and start baking today!</p>
+            
+            <!-- Interactive Cookie Button -->
+            <button id="cookie-btn" onclick="grabCookie()">🍪 Click to Get a Free Cookie!</button>
+            <p id="cookie-counter">Cookies collected: <span id="count">0</span></p>
+        </section>
+
+        <!-- Baked Goods Image Gallery (Clickable Images) -->
+        <section class="gallery-section">
+            <h2>Our Delicious Baked Goods</h2>
+            <p>Click on any image or button below to go directly to its recipe page!</p>
+            
+            <div class="card-grid">
+                <!-- Cupcake Card -->
+                <div class="card">
+                    <a href="cupcakes.html">
+                        <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=600&q=80" alt="Vibrant Frosted Cupcakes">
+                    </a>
+                    <h3>Funfetti Cupcakes</h3>
+                    <p>Fluffy vanilla cupcakes topped with colorful buttercream frosting and sprinkles!</p>
+                    <a href="cupcakes.html" class="btn">View Cupcake Recipe &rarr;</a>
+                </div>
+
+                <!-- Cookie Card -->
+                <div class="card">
+                    <a href="cookies.html">
+                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80" alt="Fresh Chocolate Chip Cookies">
+                    </a>
+                    <h3>Chocolate Chip Cookies</h3>
+                    <p>Warm, gooey, chocolate chip perfection baked to golden brown goodness.</p>
+                    <a href="cookies.html" class="btn">View Cookie Recipe &rarr;</a>
+                </div>
+
+                <!-- Assorted Bakery Card -->
+                <div class="card">
+                    <a href="cookies.html">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Assorted Bakery Goods and Pastries">
+                    </a>
+                    <h3>Assorted Bakery Treats</h3>
+                    <p>A bright and colorful selection of donuts, tarts, cookies, and sweet treats!</p>
+                    <a href="cookies.html" class="btn">Explore Cookies & More &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bakery Highlights List -->
+        <section class="info-section">
+            <h2>Why You Will Love Baking With Us</h2>
+            <ul class="bakery-list">
+                <li>🎨 <strong>Vibrant & Colorful:</strong> Fun recipes made to brighten up your baking experience.</li>
+                <li>⏱️ <strong>Quick & Easy:</strong> Step-by-step instructions designed for all skill levels.</li>
+                <li>✨ <strong>Interactive Features:</strong> Try out our interactive cookie counter and color theme switcher!</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sweet Tooth Bakery. Built with HTML, CSS, & JavaScript.</p>
+        <button id="theme-btn" onclick="changeTheme()">🎨 Change Theme Color</button>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
